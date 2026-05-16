@@ -12,4 +12,4 @@ export { hashPassword, comparePassword } from "./password";
 export { verifyAuth, verifyAdmin } from "./guards";
 
 // Re-export the TokenPayload type for convenience
-export type { TokenPayload } from "@/types/auth";
+export type { TokenPayload } from "@/core/types/auth";

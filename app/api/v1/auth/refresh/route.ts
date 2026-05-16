@@ -1,14 +1,14 @@
 import { NextRequest } from "next/server";
-import prisma from "@/lib/prisma";
+import prisma from "@/core/database/prisma";
 import {
   verifyToken,
   signAccessToken,
   signRefreshToken,
   getRefreshTokenExpiry,
 } from "@/lib/auth";
-import { AppError, handleRouteError } from "@/lib/errors";
-import { successResponse } from "@/lib/helpers/response";
-import { AUTH } from "@/config/constants";
+import { AppError, handleRouteError } from "@/core/errors";
+import { successResponse } from "@/core/helpers/response";
+import { AUTH } from "@/core/config/constants";
 
 /**
  * @swagger

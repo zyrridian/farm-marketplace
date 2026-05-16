@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import prisma from "@/lib/prisma";
+import prisma from "@/core/database/prisma";
 import { verifyAdmin } from "@/lib/auth";
 
 /**
@@ -113,7 +113,7 @@ export async function GET(request: NextRequest) {
         status: "error",
         message: error.message || "Failed to get orders",
       },
-      { status: error.status || 500 }
+      { status: error.status || 500 },
     );
   }
 }

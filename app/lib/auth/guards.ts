@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
-import { TokenPayload } from "@/types/auth";
-import { AppError } from "@/lib/errors";
+import { TokenPayload } from "@/core/types/auth";
+import { AppError } from "@/core/errors";
 import { extractBearerToken, verifyToken } from "./tokens";
 
 /**
