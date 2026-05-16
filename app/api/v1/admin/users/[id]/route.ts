@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 import prisma from "@/core/database/prisma";
-import { verifyAdmin } from "@/lib/auth";
+import { verifyAdmin } from "@/features/auth";
 import { AppError, handleRouteError } from "@/core/errors";
 import { successResponse } from "@/core/helpers/response";
 

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/core/database/prisma";
-import { verifyAuth } from "@/lib/auth";
+import { verifyAuth } from "@/features/auth";
 
 /**
  * @swagger

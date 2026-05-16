@@ -1,4 +1,4 @@
-// Barrel re-export — keeps `import { ... } from "@/lib/auth"` working
+// Barrel re-export — keeps `import { ... } from "@/features/auth"` working
 export {
   signAccessToken,
   signRefreshToken,

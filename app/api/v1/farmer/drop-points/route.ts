@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/core/database/prisma";
-import { verifyToken, extractBearerToken } from "@/lib/auth";
+import { verifyToken, extractBearerToken } from "@/features/auth";
 
 /**
  * GET /api/v1/farmer/drop-points

@@ -5,7 +5,7 @@ import {
   signAccessToken,
   signRefreshToken,
   getRefreshTokenExpiry,
-} from "@/lib/auth";
+} from "@/features/auth";
 import { AppError, handleRouteError } from "@/core/errors";
 import { successResponse } from "@/core/helpers/response";
 import { AUTH } from "@/core/config/constants";

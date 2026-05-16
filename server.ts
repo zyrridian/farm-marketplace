@@ -3,7 +3,7 @@ import { createServer } from "http";
 import { parse } from "url";
 import next from "next";
 import { Server as SocketIOServer, Socket } from "socket.io";
-import { verifyToken } from "./app/lib/auth/tokens";
+import { verifyToken } from "./app/features/auth/tokens";
 import prisma from "./app/core/database/prisma";
 
 const dev = process.env.NODE_ENV !== "production";
